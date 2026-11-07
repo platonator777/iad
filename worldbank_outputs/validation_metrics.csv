@@ -1,0 +1,9 @@
+﻿Модель,"MAE, лет",Параметры
+Градиентный бустинг,3.4045930089970144,"{'histgradientboostingregressor__max_iter': 100, 'histgradientboostingregressor__max_leaf_nodes': 15, 'histgradientboostingregressor__min_samples_leaf': 20}"
+"Сплайн, log ВВП + год",3.4521155263700343,"{'columntransformer__curve__n_knots': 8, 'ridge__alpha': 0.1}"
+"Линейная, log ВВП + год",3.5645396503556785,{}
+Дерево,3.698120106780493,"{'decisiontreeregressor__max_depth': 6, 'decisiontreeregressor__min_samples_leaf': 15}"
+Диапазоны ВВП,3.7327944561384236,{}
+"Линейная, ВВП + год",5.12465372926241,{}
+"Линейная, ВВП",5.456255141753284,{}
+Медиана,6.751254858709519,{}
