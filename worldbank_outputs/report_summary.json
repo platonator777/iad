@@ -1,0 +1,19 @@
+{
+  "main_model": "Сплайн, log ВВП + год",
+  "preliminary_model": "Градиентный бустинг",
+  "life_medians": {
+    "2000": 70.542,
+    "2019": 74.165,
+    "2020": 72.994
+  },
+  "gdp_medians": {
+    "2000": 10588.77836250055,
+    "2019": 16290.3431875109,
+    "2020": 15345.41026595505
+  },
+  "life_growing_countries": 213,
+  "median_country_gdp_change": 42.53480785062038,
+  "bootstrap_repeats": 1000,
+  "mean_ci_includes_individual_country_variation": false,
+  "recommendation_made_after_test_review": true
+}

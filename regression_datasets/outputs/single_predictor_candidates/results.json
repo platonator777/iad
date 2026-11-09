@@ -1,0 +1,104 @@
+{
+  "pressure": {
+    "Прямая": {
+      "loo_mae": 129.68045894483782,
+      "loo_rmse": 167.97490808363136,
+      "loo_r2": 0.40971295384106676,
+      "flagged_temperature_c": []
+    },
+    "ln P от 1/T": {
+      "loo_mae": 4.352138579076327,
+      "loo_rmse": 10.98158682894799,
+      "loo_r2": 0.9974770733279222,
+      "flagged_temperature_c": []
+    },
+    "ln P от 1/T, очистка": {
+      "loo_mae": 4.553266791852619,
+      "loo_rmse": 11.564956196191517,
+      "loo_r2": 0.9972019052744385,
+      "flagged_temperature_c": [
+        60
+      ]
+    }
+  },
+  "pressure_log_equation": [
+    18.273753686337407,
+    -7306.653792242217
+  ],
+  "chwirut1": {
+    "Прямая": {
+      "beta": [
+        53.10372367225175,
+        -10.021190973081165
+      ],
+      "cv_mae": 11.844487347616978,
+      "test_mae": 16.29301442298337,
+      "test_r2": 0.5434801460913699
+    },
+    "Экспонента": {
+      "beta": [
+        4.216554055752587,
+        -0.4551567340944651
+      ],
+      "cv_mae": 5.5052611860341925,
+      "test_mae": 11.042960126545996,
+      "test_r2": 0.7438487760128063
+    },
+    "Степенная": {
+      "beta": [
+        3.911491572468949,
+        -1.1502768204911995
+      ],
+      "cv_mae": 3.5142417206104826,
+      "test_mae": 13.227018582118177,
+      "test_r2": 0.5558054980711267
+    },
+    "Степенная × экспонента": {
+      "beta": [
+        4.002499066427426,
+        -0.8886517916549479,
+        -0.11141092754024422
+      ],
+      "cv_mae": 2.8728304393154764,
+      "test_mae": 7.503862533554883,
+      "test_r2": 0.8563706179494533
+    },
+    "1/x": {
+      "beta": [
+        -1.344437017169736,
+        49.450334385793035
+      ],
+      "cv_mae": 2.8452151806638226,
+      "test_mae": 7.775840823800952,
+      "test_r2": 0.8504080696577692
+    },
+    "1/x и 1/x²": {
+      "beta": [
+        -5.84183398405681,
+        67.24554835642722,
+        -11.914750361330553
+      ],
+      "cv_mae": 2.493644953545096,
+      "test_mae": 3.2468784115190945,
+      "test_r2": 0.9769959173016234
+    }
+  },
+  "chwirut_train_n": 158,
+  "chwirut_test_n": 56,
+  "sources": [
+    {
+      "local_file": "pressure_mercury.csv",
+      "source_url": "https://raw.githubusercontent.com/vincentarelbundock/Rdatasets/master/csv/datasets/pressure.csv",
+      "retrieved_on": "2026-11-09",
+      "method": "Numeric data extracted from web tool text; original values retained",
+      "local_csv_sha256": "7ff43c3d66e3ac9b926bd80dc43b9aff8688212cd2c88837fbbc1b00d418eb68"
+    },
+    {
+      "local_file": "chwirut1.csv",
+      "source_url": "https://www.itl.nist.gov/div898/strd/nls/data/LINKS/DATA/Chwirut1.dat",
+      "retrieved_on": "2026-11-09",
+      "method": "Numeric data extracted from web tool text; original values retained",
+      "local_csv_sha256": "68ef992e7a1a49061985c0251f6fdf666e33654ae06d9788b448b6f6141743ab"
+    }
+  ]
+}
